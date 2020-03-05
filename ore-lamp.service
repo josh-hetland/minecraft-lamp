@@ -1,0 +1,11 @@
+[Unit]
+Description=Minecraft Ore Lamp
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /opt/ore-lamp/oreblock.py
+
+[Install]
+WantedBy=multi-user.target
+
